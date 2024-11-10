@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barcelona Tourism Rose Chart</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <link rel="stylesheet" href="nightingale.css">
+</head>
+<body>
+<div class="container">
+  <div id="diagramContainer">
+    <div id="legendImage" class="legend-container">
+      <h3>Country of Origin</h3>
+      <div class="legend-items">
+        <div class="legend-item">
+          <span class="dot france"></span>
+          <span class="legend-text">France</span>
+        </div>
+        <div class="legend-item">
+          <span class="dot uk"></span>
+          <span class="legend-text">United Kingdom</span>
+        </div>
+        <div class="legend-item">
+          <span class="dot usa"></span>
+          <span class="legend-text">USA</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="imageContainer">
+      <div id="heading">
+        <h2>Barcelona Tourist Visits</h2>
+        <div class="lower">Monthly Average (2019-2024)</div>
+      </div>
+
+      <div id="chart"></div>
+
+      <div class="caption">
+        <p>A visualization of monthly tourist visits to Barcelona</p>
+        <p class="shiftLittle">from the top three visiting countries</p>
+      </div>
+      <div class="source-citation">
+        <p>Source: <a href="https://www.ine.es/jaxiT3/Tabla.htm?t=52048" target="_blank" rel="noopener noreferrer">Instituto Nacional de Estadística</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="nightingale.js"></script>
+</body>
+</html>
